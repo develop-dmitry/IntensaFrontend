@@ -1,0 +1,237 @@
+html {
+  font-size: 0.7vw;
+}
+@media (min-width: 1430px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  html {
+    font-size: 1vw;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 1.7vw;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 140rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .container {
+    width: 90rem;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.about {
+  padding-top: 12.8rem;
+}
+.about-container {
+  display: flex;
+  column-gap: 3rem;
+}
+@media (max-width: 992px) {
+  .about-container {
+    flex-wrap: wrap;
+    row-gap: 5rem;
+  }
+}
+.about-content {
+  flex-basis: 68.5rem;
+}
+@media (max-width: 992px) {
+  .about-content {
+    order: 1;
+    flex-basis: 100%;
+  }
+}
+.about-content h1 {
+  text-transform: uppercase;
+  font-size: 6.7rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .about-content h1 {
+    font-size: 5.7rem;
+  }
+}
+.about-content p {
+  margin: 2.5rem 0 0;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  color: #000000;
+}
+@media (max-width: 576px) {
+  .about-content p {
+    font-size: 2.5rem;
+  }
+}
+.about-content ul {
+  margin: 6.5rem 3.3rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 4.5rem;
+  column-gap: 4rem;
+}
+@media (max-width: 992px) {
+  .about-content ul {
+    margin-right: 0;
+  }
+}
+.about-content ul li {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+@media (max-width: 576px) {
+  .about-content ul li {
+    font-size: 2.4rem;
+  }
+}
+.about-content ul li:nth-child(2n+1) {
+  flex-basis: 26.5rem;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .about-content ul li:nth-child(2n+1) {
+    flex-basis: 31.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-content ul li:nth-child(2n+1) {
+    flex-basis: calc(50% - 2rem);
+  }
+}
+.about-content ul li:nth-child(2n) {
+  flex-basis: 29rem;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .about-content ul li:nth-child(2n) {
+    flex-basis: 31.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-content ul li:nth-child(2n) {
+    flex-basis: calc(50% - 2rem);
+  }
+}
+.about-content ul li span {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #B8B8B8;
+}
+@media (max-width: 576px) {
+  .about-content ul li span {
+    font-size: 2rem;
+  }
+}
+.about-image {
+  flex-basis: 68.5rem;
+  padding-top: 20rem;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .about-image {
+    order: 0;
+    flex-basis: 100%;
+  }
+}
+.about-image img {
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  .about-image img {
+    width: 100%;
+  }
+}
+.about-image:before {
+  content: "";
+  background: url(../images/cup.png) no-repeat center center/cover;
+  width: 52.4rem;
+  height: 61.4rem;
+  position: absolute;
+  left: -6.2rem;
+  top: -9.8rem;
+  z-index: -1;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .about-image:before {
+    left: 14.8rem;
+  }
+}
+.about-image-descr {
+  display: flex;
+  justify-content: flex-end;
+}
+.about-image-descr span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  display: inline-block;
+  margin-right: 14.1rem;
+  max-width: 18.5rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 576px) {
+  .about-image-descr span {
+    margin-bottom: 2rem;
+    margin-right: 6rem;
+  }
+}
+
+.company-list {
+  padding: 14rem 0;
+}
+.company-list ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5rem;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .company-list ul {
+    flex-wrap: wrap;
+    row-gap: 3rem;
+  }
+}
+.company-list ul li {
+  list-style: none;
+  flex-basis: auto;
+}
+@media (max-width: 576px) {
+  .company-list ul li {
+    flex-basis: calc(50% - 2.5rem);
+  }
+}
+.company-list ul li img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
